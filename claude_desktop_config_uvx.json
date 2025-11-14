@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "translation-mcp": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/yourusername/translation-mcp",
+        "translation-mcp"
+      ],
+      "env": {
+        "CROWDIN_API_TOKEN": "your_crowdin_token_here",
+        "CROWDIN_PROJECT_ID": "your_project_id_here"
+      }
+    }
+  }
+}

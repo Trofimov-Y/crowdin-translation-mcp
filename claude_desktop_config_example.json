@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "translation-mcp": {
+      "command": "/Users/userName/some/path/venv/bin/python",
+      "args": ["-m", "translation_mcp.server"],
+      "env": {
+        "CROWDIN_API_TOKEN": "your_crowdin_token_here",
+        "CROWDIN_PROJECT_ID": "your_project_id_here"
+      }
+    }
+  }
+}
