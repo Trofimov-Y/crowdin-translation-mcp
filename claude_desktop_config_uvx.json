@@ -4,7 +4,7 @@
       "command": "uvx",
       "args": [
         "--from",
-        "git+https://github.com/yourusername/translation-mcp",
+        "git+https://github.com/YOUR_GITHUB_USERNAME/translation-mcp",
         "translation-mcp"
       ],
       "env": {
