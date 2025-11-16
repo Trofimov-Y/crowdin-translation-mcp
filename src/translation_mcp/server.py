@@ -686,8 +686,8 @@ async def handle_manage_labels(arguments: Dict[str, Any]) -> List[TextContent]:
         )]
 
 
-async def main():
-    """Run the MCP server."""
+async def run_server():
+    """Run the MCP server (async)."""
     # Initialize clients
     initialize_clients()
     
@@ -700,5 +700,10 @@ async def main():
         )
 
 
+def main():
+    """Entry point for the MCP server (sync wrapper)."""
+    asyncio.run(run_server())
+
+
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()
